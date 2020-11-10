@@ -1,3 +1,12 @@
+#### React Course Journal
+
+11/9/2020
+
+Went over lists & conditionals and how you can dynamically add portions of JSX into the return section using and "if" statement and display a list using the map() function. Currently working on course section assignment for Lists & Conditionals.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
