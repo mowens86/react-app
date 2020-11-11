@@ -1,11 +1,16 @@
 #### React Course Journal
 
+11/10
+
+Worked on solution to the assignment given. Will continue to work on this problem more and definitely feel I need to understand the state and props more with practice.
+
+
 11/9/2020
 
 Went over lists & conditionals and how you can dynamically add portions of JSX into the return section using and "if" statement and display a list using the map() function. Currently working on course section assignment for Lists & Conditionals.
 
 
-
+--------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
