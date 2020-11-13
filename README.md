@@ -1,7 +1,7 @@
 #### React Course Journal
 
 11/12
-
+Completed assignment and learned about styling with Radium, styled-components, and CSS modules. I think CSS modules is the best way since it scopes components and isn't global. Next.js and Gatsby both have these and I like that about both of them.
 
 11/10
 
