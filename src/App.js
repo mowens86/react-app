@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+
 import './App.css';
 import Person from './Person/Person';
 
@@ -45,12 +46,16 @@ class App extends Component {
   render() {
 
     const buttonStyle = {
-      backgroundColor: 'blue',
+      backgroundColor: 'green',
       font: 'inherit',
       border: '1px solid blue',
       padding: '8px',
       color: 'white',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      ':hover': {
+        backgroundColor: 'lightgreen',
+        color: 'black'
+      }
     };
 
     let persons = null;
@@ -67,18 +72,37 @@ class App extends Component {
               changed={(event) => this.nameChangedHandler(event, person.id)} />
           })}
         </div>
-      )
+      );
+
+      // buttonStyle.backgroundColor = 'red';
+      // buttonStyle[':hover'] = {
+      //   backgroundColor: 'salmon',
+      //   color: 'black'
+      // }
+    };
+
+    const classes = [];
+
+    if (this.state.persons.length <= 2) {
+      classes.push('red'); // classes = ['red']
+    }
+    if (this.state.persons.length <= 1) {
+      classes.push('bold'); // classes = ['red', 'bold']
     }
 
-    return (
-      <div className="App">
-        <h1>Hi, I'm a React App</h1>
-        <p>This is really working!</p>
-        <button 
-        style={buttonStyle}
-        onClick={this.togglePersonsHandler}>Toggle Persons</button>
-        {persons}
-      </div>
+
+
+      return (
+        <div className="App">
+          <h1>Hi, I'm a React App</h1>
+          <p className={classes.join(' ')}>This is really working!</p>
+          <button
+          className="button"
+          onClick={this.togglePersonsHandler}>
+            Toggle Persons
+          </button>
+          {persons}
+        </div>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }

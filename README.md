@@ -1,5 +1,8 @@
 #### React Course Journal
 
+11/12
+
+
 11/10
 
 Worked on solution to the assignment given. Will continue to work on this problem more and definitely feel I need to understand the state and props more with practice.
