@@ -1,15 +1,15 @@
 ### React Course Journal
 
-### 11/12/2020
+#### 11/12/2020
 
 Completed assignment and learned about styling with Radium, styled-components, and CSS modules. I think CSS modules is the best way since it scopes components and isn't global. Next.js and Gatsby both have these and I like that about both of them.
 
-### 11/10/2020
+#### 11/10/2020
 
 Worked on solution to the assignment given. Will continue to work on this problem more and definitely feel I need to understand the state and props more with practice.
 
 
-### 11/9/2020
+#### 11/9/2020
 
 Went over lists & conditionals and how you can dynamically add portions of JSX into the return section using and "if" statement and display a list using the map() function. Currently working on course section assignment for Lists & Conditionals.
 
