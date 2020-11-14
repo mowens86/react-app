@@ -1,5 +1,10 @@
 ### React Course Journal
 
+#### 11/13/2020
+
+Learned about debugging within React's error message and using breakpoints in chrome's dev tools using breakpoints. Donwloaded the React Dev Tools for Chrome as an extension. It's pretty awesome and really helps debug, test, and play around with things to learn how everything works. Another useful tool is the ErrorBoundary we created an example of.
+
+
 #### 11/12/2020
 
 Completed assignment and learned about styling with Radium, styled-components, and CSS modules. I think CSS modules is the best way since it scopes components and isn't global. Next.js and Gatsby both have these and I like that about both of them.
