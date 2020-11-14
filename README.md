@@ -1,5 +1,20 @@
 ### React Course Journal
 
+#### 11/14/2020
+
+Learned aboout comparing stateless VS stateful components, and class-based vs functional components.
+Class-based components use class XY extends components and givves access to state and lifecycle hooks, access state and props via "this", this.stat.XY & this.props.XY. Functional const XY = props => {...} gives access to State (UseState()) but does not give lifecycle hooks and access to props via "props", props.XY...Use class-based to manage State or access to Lifecycle Hooks and you don't want to use React Hooks...Use Functional in all other cases.
+
+Component lifecycle are only available in class-based components. Lifecycle hooks are not React hooks.
+
+Component Lifecycle - Creation 
+
+- constructor(props) - DO: Set-up State - DON'T: Cause Side-Effects
+- GetDerivedStateFromProps(props,state) - DO: Sync state - DON'T: Cause Side-Effects
+- render() - Prepare and structure your JSX code
+- Render Child Components
+- componentDidMount() - DO: Cause Side-Effects - DON'T: Update State (triggers re-render)
+
 #### 11/13/2020
 
 Learned about debugging within React's error message and using breakpoints in chrome's dev tools using breakpoints. Donwloaded the React Dev Tools for Chrome as an extension. It's pretty awesome and really helps debug, test, and play around with things to learn how everything works. Another useful tool is the ErrorBoundary we created an example of.
