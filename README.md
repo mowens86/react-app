@@ -1,6 +1,16 @@
 ### React Course Journal
 
-#### 11/14/2020
+#### 11/15/2020 Section 7: Diving Depper into Components & React Internals (Cont.)
+
+Learned about the deeper parts of React including higher order components (HOCs), PropTypes, Refs, and the Context API. That was a lot lot to digest and was a little hard to follow as it was the first time seeing these. Will need to re-watch a couple times to fully understand as the instructor blew right through this portion. Will use this modeule as a reference but also the React docs are helpfull
+
+- [useEffect()](https://reactjs.org/docs/hooks-effect.html)
+- [State & Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+- [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- [Higher Order Components](https://reactjs.org/docs/higher-order-components.html)
+- [Refs](https://reactjs.org/docs/refs-and-the-dom.html)
+
+#### 11/14/2020 Section 7: Diving Depper into Components & React Internals
 
 Learned aboout comparing stateless VS stateful components, and class-based vs functional components.
 Class-based components use class XY extends components and givves access to state and lifecycle hooks, access state and props via "this", this.stat.XY & this.props.XY. Functional const XY = props => {...} gives access to State (UseState()) but does not give lifecycle hooks and access to props via "props", props.XY...Use class-based to manage State or access to Lifecycle Hooks and you don't want to use React Hooks...Use Functional in all other cases.
@@ -10,26 +20,41 @@ Component lifecycle are only available in class-based components. Lifecycle hook
 Component Lifecycle - Creation 
 
 - constructor(props) - DO: Set-up State - DON'T: Cause Side-Effects
-- GetDerivedStateFromProps(props,state) - DO: Sync state - DON'T: Cause Side-Effects
+- getDerivedStateFromProps(props,state) - DO: Sync state - DON'T: Cause Side-Effects
 - render() - Prepare and structure your JSX code
 - Render Child Components
 - componentDidMount() - DO: Cause Side-Effects - DON'T: Update State (triggers re-render)
 
-#### 11/13/2020
+Component Lifecycle - Update
+
+- getDerivedStateFromProps(props,state) - DO: Sync state - DON'T: Cause Side-Effects
+- shouldComponentUpdate(nextProps, nextState) - DO: Decide whether to Continue or Not - DON't: Cause Side-Effects
+- render() - Prepare and structure your JSX code
+- Update Child Component Props
+- getSnapshotBeforeUpdate(prevProps, PrevState) - DO: Last-minute DOM ops - DON'T: Cause Side-Effects
+- componentDidUpdate() - Do: Cause Side-Effects - DON'T: Update State (triggers re-render)
+
+How React Updates the DOM
+
+- shouldComponentUpdate() passed! => render() is called
+- Faster than "real" DOM => Old Virtual DOM - Re-rendered Virtual DOM <= render()> doesn't immediately update the "real" DOM!
+- Compares old virtual DOM to new virtual DOM => If differences found? Update "real" DOM => No differences? Don't touch the "real" DOM
+
+#### 11/13/2020 Section 6: Debugging React Apps
 
 Learned about debugging within React's error message and using breakpoints in chrome's dev tools using breakpoints. Donwloaded the React Dev Tools for Chrome as an extension. It's pretty awesome and really helps debug, test, and play around with things to learn how everything works. Another useful tool is the ErrorBoundary we created an example of.
 
 
-#### 11/12/2020
+#### 11/12/2020 Section 5: Styling React Components
 
 Completed assignment and learned about styling with Radium, styled-components, and CSS modules. I think CSS modules is the best way since it scopes components and isn't global. Next.js and Gatsby both have these and I like that about both of them.
 
-#### 11/10/2020
+#### 11/10/2020 Section 4: Working with Lists & Conditionals (Cont.)
 
 Worked on solution to the assignment given. Will continue to work on this problem more and definitely feel I need to understand the state and props more with practice.
 
 
-#### 11/9/2020
+#### 11/9/2020 Section 4: Working with Lists & Conditionals
 
 Went over lists & conditionals and how you can dynamically add portions of JSX into the return section using and "if" statement and display a list using the map() function. Currently working on course section assignment for Lists & Conditionals.
 
